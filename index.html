@@ -3,57 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025년 1월 달력</title>
+    <title>게시글 작성</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calendar">
-        <div class="month">2025년 1월</div>
-        <div class="days-of-week">
-            <div class="Sunday">일</div>
-            <div class="day">월</div>
-            <div class="day">화</div>
-            <div class="day">수</div>
-            <div class="day">목</div>
-            <div class="day">금</div>
-            <div class="Saturday">토</div>
-        </div>
-        <div class="dates">
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="day">1</div>
-            <div class="day">2</div>
-            <div class="day">3</div>
-            <div class="Saturday">4</div>
-            <div class="Sunday">5</div>
-            <div class="day">6</div>
-            <div class="day">7</div>
-            <div class="day">8</div>
-            <div class="day">9</div>
-            <div class="day">10</div>
-            <div class="Saturday">11</div>
-            <div class="Sunday">12</div>
-            <div class="day">13</div>
-            <div class="day">14</div>
-            <div class="day">15</div>
-            <div class="day">16</div>
-            <div class="day">17</div>
-            <div class="Saturday">18</div>
-            <div class="Sunday">19</div>
-            <div class="day">20</div>
-            <div class="day">21</div>
-            <div class="day">22</div>
-            <div class="day">23</div>
-            <div class="day">24</div>
-            <div class="Saturday">25</div>
-            <div class="Sunday">26</div>
-            <div class="day">27</div>
-            <div class="day">28</div>
-            <div class="day">29</div>
-            <div class="day">30</div>
-            <div class="day">31</div>
-        </div>
-    </div>
+    
+    <h1>게시글 작성</h1>
+    <form action="/submit-post" method="post">
+        
+        <label for="title">게시글 제목</label>
+        <input type="text" id="title" name="title" placeholder="제목을 입력하세요" required>
+
+        <label for="content">게시글 내용</label>
+        <textarea id="content" name="content" rows="5" placeholder="내용을 입력하세요" required></textarea>
+
+        <label for="author">작성자</label>
+        <input type="text" id="author" name="author" placeholder="작성자 이름을 입력하세요" required>
+
+        <button type="submit">게시글 작성</button>
+    </form>
+    
 </body>
 </html>
